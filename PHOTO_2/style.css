@@ -1,0 +1,153 @@
+/* PC、スマホ共通スタイル */
+.noto-sans jp- {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+header > a {
+  text-decoration: none;
+  font-size: 34px;
+  font-weight: bold;
+  border: solid gray 1px;
+}
+
+header > nav > a {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 34px;
+}
+
+.header:link {
+  color: #0d0d0d;
+}
+
+.header:visited {
+  color: #0d0d0d;
+}
+
+.header:hover {
+  color: #0d0d0d;
+  text-decoration: underline;
+}
+
+.header:active {
+  color: #0d0d0d;
+}
+
+.section-titile {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer {
+text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 18px;
+  }
+
+  #main-visual {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  #about > div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+  }  
+
+  #works > div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #about > div > img {
+    margin-right: 34px;
+  }
+  
+  #about > div > div {
+    height: 284px;
+  }
+
+  .worksphoto {
+    margin: 18px;
+    width: 33%;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  /* 横幅設定 */
+  body {
+    min-width: 375px;
+    margin: 0 auto 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 18px;
+  }
+
+  #about > div {
+    display: flex;
+    justify-content: center;
+    margin: 18px auto 18px auto;
+  }  
+
+  #works > div {
+    display: block;
+    justify-content: center;
+  }
+
+  #main-visual {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+  
+  #about > div > img {
+    width: 50%;
+    margin-right: 34px;
+  }
+  
+  #about > div > div {
+    height: 284px;
+  }
+
+  .worksphoto {
+    margin: 18px;
+    width: 100%;
+  }
+}
